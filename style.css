@@ -48,11 +48,6 @@ main section {
     align-items: center;
     background-color: #676a6c;
 }
-
-.banner
-{
-    max-height: 500px;
-}
   
 /* Style the divs inside the main section: add a border, padding, and margin */
 main section div {
