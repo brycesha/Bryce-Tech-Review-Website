@@ -1,0 +1,121 @@
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Jost', sans-serif;
+        background-color: whitesmoke;
+    }
+
+    body {
+        font-family: 'Jost', sans-serif;
+    }
+
+    /* Header and Navigation */
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+    }
+
+    .navigation {
+        font-weight: 300;
+        text-align: center;
+        padding: 25px 0;
+    }
+
+    .navigation a {
+        color: black;
+        padding: 0 30px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .navigation a:hover {
+        color: grey;
+    }
+
+    /* Main Content */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        margin-right: 100px; /* Adjust as needed */
+    }
+
+    /* Form Styling */
+
+
+    form#review {
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 500px;
+        padding-bottom: 25px;
+    }
+
+    form#review label {
+        display: block;
+        margin: 15px 0 5px;
+        font-weight: bold;
+    }
+
+    form#review input[type="email"],
+    form#review input[type="text"],
+    form#review input[type="url"],
+    form#review textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    form#review textarea {
+        height: 100px;
+        resize: vertical;
+    }
+
+    form#review input[type="submit"] {
+        background-color: rgb(169, 210, 235);
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    form#review input[type="submit"]:hover {
+        background-color: grey;
+    }
+
+    /* Footer Styling */
+    footer {
+        background-color: lightgrey;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Responsive Adjustments */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        .navigation a {
+            padding: 0 10px;
+        }
+
+        .featured-content {
+            flex-direction: column;
+        }
+    }
