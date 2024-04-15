@@ -1,0 +1,103 @@
+<!-- Bryce Shartle, ITEC 362, Dalton, Website Project -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A central site for tech enthusiasts to find human reviews of information on specific pieces of hardware/technology related to computers">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Computers, Tech, Reviews, Gadgets">
+    <meta name="author" content="Bryce Shartle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Hardware</title>
+    <link rel="stylesheet" href="pc_hardware.css">
+    <!-- Google Analytics Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TM8BZWH47"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-3TM8BZWH47');
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Images/btr_logo_head.png" alt="BTR logo" width="100" height="100">
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="PC_Hardware.html" class="active">PC Hardware</a>
+            <a href="Request_a_Review.html">Request a Review</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <img src="Images/pc_hardware.jpeg" alt="PC Hardware">
+            <div class="banner-text">
+                <h2>PC Hardware</h2>
+            </div>
+        </div>
+
+        <div id="scrollFeed" class="scroll-feed"></div>
+
+        <div class="navigation-buttons">
+            <button id="prevBtn">Previous Review</button>
+            <button id="nextBtn">Next Review</button>
+        </div>
+
+        <section class="featured-content" style="display:none;">
+            <article>
+                <div class="article-content">
+                    <h3>INTEL I9-14900K</h3>
+                    <img src="Images/i9.png" alt="I9 CPU" width="500" height="500">
+                    <p>
+                        Intel's Core i9-14900K processor is essentially the Core i9-13900K with a slight clock boost, but a bit more prone to overheating and throttling. If you can find a 13900K for less money, opt for it, as the 14900K is much the same chip in practice.
+                    </p>
+                    <iframe width="1437" height="559" src="https://www.youtube.com/embed/D8qEzL8MM50" title="Don't let the i9-14900K Trick You" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+
+        <section class="featured-content" style="display:none;">
+            <article>
+                <div class="article-content">
+                    <h3>NZXT H9 FLOW</h3>
+                    <img src="Images/h9.png" alt="H9 CASE" width="500" height="500">
+                    <p>
+                        NZXT specializes in the mid-tower and small form factor PC case segments and the new NZXT H9 Flow is one of the company's mid-tower dual-chamber cases with a focus on airflow. This dual-chamber design has been used by a few case makers, including Lian Li and Hyte, and now we're starting to see more fan-friendly versions pop up. Available in black and white, the NZXT H9 Flow promises the usual stunning NZXT aesthetic with solid thermal performance and excellent cable management.
+                    </p>
+                    <iframe width="1437" height="559" src="https://www.youtube.com/embed/ZpU1il5oZ3k" title="Don't Buy the NZXT H9 Flow Case Until You Watch This Review!" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+        
+        <section class="featured-content">
+            <article>
+                <div class="article-content">
+                    <h3>RTX 4070 TI</h3>
+                    <img src="Images/4070.png" alt="4070TI GPU" width="500" height="500">
+                    <p>
+                        Nvidia's GeForce RTX 4070 Ti may rank as the worst kept "secret" of the past few decades of graphics cards...What we can say is that, based on our GPU benchmarks hierarchy testing, it's faster than most of the 30-series offerings and basically ties the RTX 3090, at a lower price point...
+                    </p>
+                    <iframe width="1437" height="559" src="https://www.youtube.com/embed/Ty30r5ei3rE" title="ASUS TUF Gaming RTX 4070 Ti Review - Thermals, Noise, Clocks &amp; Power" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+
+        <script src="scrollFeed.js"></script>
+
+    </main>
+
+    <footer>
+        <p>© 2021 BTR. Contact us: contact@btr.com</p>
+    </footer>
+
+</body>
+
+</html>

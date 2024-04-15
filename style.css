@@ -1,0 +1,150 @@
+/* Bryce Shartle, ITEC 362, Dalton, Website Project */
+
+/* Global styles: Applies to all elements, setting up some basic styles like margin, padding, box-sizing, and font-family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Header, main, and banner styles: These styles are for the header, main, and banner sections, setting up a flex container, centering content, and background color */
+header, main, .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+/* Navigation styles: These styles are for the navigation bar, setting up font-weight, text alignment, and padding */
+.navigation {
+    font-weight: 300;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Navigation link styles: These styles are for the links in the navigation bar, setting up color, padding, text-decoration, and font-size */
+.navigation a {
+    color: black;
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Navigation link hover styles: These styles are for the hover state of the links in the navigation bar, changing the color */
+.navigation a:hover {
+    color: grey;
+}
+
+/* Main styles: These styles are for the main section of the page, setting up a flex container and flex direction */
+main {
+    flex-direction: column;
+}
+
+/* Banner styles: These styles are for the banner section, setting up width and overflow */
+.banner {
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Banner image styles: These styles are for the image in the banner, setting up width, height, min-height, max-height, and object-fit */
+.banner img {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Featured content styles: These styles are for the featured content section, setting up a flex container, space around justification, flex wrap, and margin */
+.featured-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+/* Featured content article styles: These styles are for the articles in the featured content section, setting up position, margin, padding, border-radius */
+.featured-content article {
+    position: relative;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Featured content article heading styles: These styles are for the headings in the articles of the featured content, setting up position, font size, color, background color, padding, and border-radius */
+.featured-content article h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 175%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Team section styles: These styles are for the team section, setting up text alignment and margin */
+.team {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Team heading styles: These styles are for the heading in the team section, setting up margin */
+.team h2 {
+    margin-bottom: 20px;
+}
+
+/* Team content styles: These styles are for the content in the team section, setting up a flex container, alignment, justification, and text alignment */
+.team-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+/* Team image styles: These styles are for the images in the team section, setting up border-radius, margin, width, and height */
+.team img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: auto;
+    height: 300px;
+}
+
+/* Team caption styles: These styles are for the captions in the team section, setting up max width and font size */
+.team p {
+    max-width: 60%;
+    font-size: 25px;
+}
+
+/* Footer styles: These styles are for the footer section, setting up background color, color, padding, text alignment, width, and box sizing */
+footer {
+    background-color: lightgray;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Image styles: These styles are for the images, setting up max width and height */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for screens with max-width of 768px: These styles are for smaller screens, changing the padding of the links in the navigation bar, flex direction of the featured content, and margin of the footer */
+@media screen and (max-width: 768px) {
+    .navigation a {
+        padding: 0 10px;
+    }
+
+    .featured-content {
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}

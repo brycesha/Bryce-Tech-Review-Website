@@ -1,0 +1,117 @@
+/* Bryce Shartle, ITEC 362, Dalton, Website Project */
+
+/* Global styles: Applies to all elements, setting up some basic styles like margin, padding, box-sizing, and font-family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Header and main section styles: These styles are for the header and main sections of the page, setting up a flex container and background color */
+header, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+/* Navigation styles: These styles are for the navigation bar, setting up font-weight, text alignment, and padding */
+.navigation {
+    font-weight: 300;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Navigation link styles: These styles are for the links in the navigation bar, setting up color, padding, text-decoration, and font-size */
+.navigation a {
+    color: black;
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Navigation link hover styles: These styles are for the hover state of the links in the navigation bar, changing the color */
+.navigation a:hover {
+    color: grey;
+}
+
+/* Main section styles: These styles are for the main section of the page, setting up flex direction and padding */
+main {
+    flex-direction: column;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+}
+
+/* Review form styles: These styles are for the review form, setting up padding, border-radius, box-shadow, width, and max-width */
+form#review {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Review form label styles: These styles are for the labels in the review form, setting up display, margin, and font-weight */
+form#review label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+/* Review form input and textarea styles: These styles are for the inputs and textarea in the review form, setting up width, padding, margin, border, and border-radius */
+form#review input[type="email"],
+form#review input[type="text"],
+form#review input[type="url"],
+form#review textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Review form textarea styles: These styles are for the textarea in the review form, setting up height and resize */
+form#review textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Review form submit button styles: These styles are for the submit button in the review form, setting up background-color, color, padding, border, border-radius, cursor, and font-size */
+form#review input[type="submit"] {
+    background-color: rgb(169, 210, 235);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Review form submit button hover styles: These styles are for the hover state of the submit button in the review form, changing the background-color */
+form#review input[type="submit"]:hover {
+    background-color: grey;
+}
+
+/* Footer styles: These styles are for the footer, setting up background-color, color, padding, text-align, width, and box-sizing */
+footer {
+    background-color: lightgray;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Image styles: These styles are for the images, setting up max-width and height */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for screens with max-width of 768px: These styles are for smaller screens, changing the padding of the links in the navigation bar */
+@media screen and (max-width: 768px) {
+    .navigation a {
+        padding: 0 10px;
+    }
+}

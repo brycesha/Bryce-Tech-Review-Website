@@ -1,0 +1,194 @@
+/* Bryce Shartle, ITEC 362, Dalton, Website Project */
+
+/* Global styles: Applies to all elements, setting up some basic styles like margin, padding, box-sizing, and font-family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Header styles: These styles are for the header section, setting up a flex container, centering content, and background color */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+/* Navigation styles: These styles are for the navigation bar, setting up font-weight, text alignment, and padding */
+.navigation {
+    font-weight: 300;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Navigation link styles: These styles are for the links in the navigation bar, setting up color, padding, text-decoration, and font-size */
+.navigation a {
+    color: black;
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Navigation link hover styles: These styles are for the hover state of the links in the navigation bar, changing the color */
+.navigation a:hover {
+    color: grey;
+}
+
+/* Main styles: These styles are for the main section of the page, setting up a flex container, flex direction, and background color */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+/* Banner styles: These styles are for the banner section, setting up a flex container, centering content, and background color */
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Banner text styles: These styles are for the text in the banner, positioning it at the center and adding background color */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Banner text heading styles: These styles are for the heading in the banner text, setting up font size, color, and background color */
+.banner-text h2 {
+    font-size: 1.75em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Banner image styles: These styles are for the image in the banner, setting up width, height, and object-fit */
+.banner img {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Navigation buttons styles: These styles are for the navigation buttons section, setting up margin, flex container, and padding */
+.navigation-buttons {
+    margin-top: 2.5%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Navigation button styles: These styles are for the buttons in the navigation buttons section, setting up font, color, background, padding, margin, cursor, and transition */
+.navigation-buttons button {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation button hover styles: These styles are for the hover state of the buttons in the navigation buttons section, changing the background color */
+.navigation-buttons button:hover {
+    background-color: lightgray;
+}
+
+/* Navigation button active styles: These styles are for the active state of the buttons in the navigation buttons section, changing the background color and text color */
+.navigation-buttons button:active {
+    background-color: gray;
+    color: white;
+}
+
+/* Article content styles: These styles are for the article content section, setting up flex container, wrapping, alignment, max width, margin, padding, background color, border-radius, and box shadow */
+.article-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Article content heading styles: These styles are for the headings in the article content, setting up font size, width, margin, text alignment, and font family */
+.article-content h3 {
+    font-size: 1.5em;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Article content image styles: These styles are for the images in the article content, setting up flex, margin, max width, height */
+.article-content img {
+    flex: 1;
+    margin-right: 20px;
+    max-width: calc(50% - 10px);
+    height: auto;
+}
+
+/* Article content paragraph styles: These styles are for the paragraphs in the article content, setting up flex, text alignment, and margin */
+.article-content p {
+    flex: 2;
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+/* Article content iframe styles: These styles are for the iframes in the article content, setting up width, height, and margin */
+.article-content iframe,
+iframe {
+    width: 100%;
+    height: 315px;
+    margin-top: 20px;
+}
+
+/* Footer styles: These styles are for the footer section, setting up background color, color, padding, text alignment, width, and box sizing */
+footer {
+    background-color: lightgray;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Image styles: These styles are for the images, setting up max width and height */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for screens with max-width of 768px: These styles are for smaller screens, changing the padding of the links in the navigation bar */
+@media screen and (max-width: 768px) {
+    .navigation a {
+        padding: 0 10px;
+    }
+
+    /* Featured content styles: These styles are for the featured content section in smaller screens, changing the flex direction and margin */
+    .featured-content {
+        flex-direction: column;
+    }
+
+    /* Featured content article styles: These styles are for the articles in the featured content section in smaller screens, changing the margin */
+    .featured-content article {
+        margin: 15px 0;
+    }
+}
