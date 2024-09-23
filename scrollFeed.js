@@ -1,5 +1,5 @@
 /* 
-    Bryce Shartle, ITEC 362, Dalton, Website Project
+    ITEC 362, Website Project
 
    This function handles the functionality of a slider to navigate between different sections of featured content.
 */
